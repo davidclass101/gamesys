@@ -96,7 +96,6 @@ public class GameMachine {
                 result.addElement(gameMachine);
             }
         }
-
         return result;
     }
 
@@ -148,19 +147,6 @@ public class GameMachine {
         }
         return result;
     }
-
-    // Method to search or filter game machines by description keyword
-    public static ScratchList<GameMachine> searchByDescriptionKeyword(ScratchList<GameMachine> gameMachines, String keyword) {
-        ScratchList<GameMachine> result = new ScratchList<>();
-
-        for (GameMachine gameMachine : gameMachines) {
-            if (gameMachine.getDescription().toLowerCase().contains(keyword.toLowerCase())) {
-                result.addElement(gameMachine);
-            }
-        }
-        return result;
-    }
-
 
     @Override
     public String toString() {
